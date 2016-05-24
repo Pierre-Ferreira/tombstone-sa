@@ -7,7 +7,7 @@ from .forms import FeedBackForm
 
 # Create your views here.
 
-def feedback_form_page(request):
+def feedback_form_view(request):
     form = FeedBackForm(request.POST or None)
     successMsg = ""
     if form.is_valid():

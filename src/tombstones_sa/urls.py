@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include("homepage.urls")), #This is to get all the urls from homepage/urls.py
+    url(r'^contactus/', include("contactus.urls")), #This is to get all the urls from contactus/urls.py
     url(r'^feedback/', include("feedback.urls")), #This is to get all the urls from feedback/urls.py
+    # url(r'^foo/$', TemplateView.as_view(template_name='contact_us_page.html')),
 ]

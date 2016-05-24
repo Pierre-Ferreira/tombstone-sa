@@ -9,17 +9,15 @@
 <div class="row">
   <div class='col-sm-8 col-sm-offset-2'>
     <h1 class='page-header'>{{title}}</h1>
-    {% include 'feedback_encouragement_para.html' %}
-    <p class='page-paragraph'>
-      Of course we also welcome any positive feedback we can relay back to our hard working and diligent affiliates:)
-    </p>
-
     <div class="row">
-      <div class='col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 feedback-form'>
+      <div class='col-md-6 col-xs-12 contactus-form'>
         <form method='POST' action=''> {% csrf_token %}
           {{form|crispy}}
-          <input type='submit' class='btn btn-feedback-submit btn-lg btn-block' value='Submit' />
+          <input type='submit' class='btn btn-contactus-submit btn-lg btn-block' value='Submit' />
         </form>
+      </div>
+      <div class='col-md-6 col-xs-12'>
+        {% include 'fill_form_encouragement_para.html' %}
       </div>
     </div>
   </div>

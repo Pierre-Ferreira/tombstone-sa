@@ -26,6 +26,13 @@ body{
   font-size: larger;
   text-align: justify;
 }
+.homepage-jumbotron {
+  background-color: white;
+  text-align: center;
+}
+.read-below-guide {
+  font-size: medium;
+}
 .feedback-form {
   background-color: #d6d6d6;
   border-width: 2px;
@@ -37,10 +44,48 @@ body{
   background-color: #2d2d2d;
   color: #9d9d9d;
 }
+.feedback-form .btn-feedback-submit:hover {
+  color: white;
+}
+.contactus-form {
+  background-color: #d6d6d6;
+  border-width: 2px;
+  border-style: solid;
+  padding: 30px 50px;
+  margin-top: 30px;
+}
+.contactus-form .btn-contactus-submit {
+  background-color: #2d2d2d;
+  color: #9d9d9d;
+}
+.contactus-form .btn-contactus-submit:hover {
+  color: white;
+}
+.control-label.requiredField{
+  font-size: x-large;
+}
+.form-control {
+    height: 45px;
+    font-size: 25px;
+}
+.form-group {
+  text-align: center;
+}
+.Messages {
+  text-align: center;
+  font-size: x-large;
+  color: green;
+  font-weight: 600;
+  list-style-type: none;
+}
+
 /*Medium size screen*/
 @media screen and (max-width: 992px) {
   .navbar-default .navbar-nav > li > a {
     margin: 0 -6px;
+  }
+  .homepage-jumbotron h1{
+    font-size: 45px;
   }
 }
 
@@ -53,5 +98,8 @@ body{
 @media screen and (max-width: 767px) {
   .navbar .container-fluid .navbar-brand {
     font-size: large;
+  }
+  .homepage-jumbotron h1{
+    font-size: 30px;
   }
 }
