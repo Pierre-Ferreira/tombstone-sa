@@ -61,7 +61,7 @@ body{
 .contactus-form .btn-contactus-submit:hover {
   color: white;
 }
-.control-label.requiredField{
+.control-label{
   font-size: x-large;
 }
 .form-control {

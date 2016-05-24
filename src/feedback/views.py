@@ -26,9 +26,11 @@ def feedback_form_view(request):
     # instance = get_object_or_404(FeedBack, id=2)
     # queryset = FeedBack.objects.all()
     title = "Feedback"
+    nbar = "feedback"
     context = {
         "form": form,
         "title": title,
+        "nbar": nbar,
         # "object_list": queryset,
         # "pagename": "FEeDBACK"
     }

@@ -27,14 +27,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Tombstone/Memorials SA</a>
+          <a class="navbar-brand" href="/">Tombstone/Memorials SA</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/catalogue">Catalogue</a></li>
-            <li><a href="/contactus">Contact Us</a></li>
-            <li><a href="/feedback">Feedback</a></li>
+            <li class="{% if nbar == 'homepage' %}active{% endif %}"><a href="/">Home</a></li>
+            <li class="{% if nbar == 'catalogue' %}active{% endif %}"><a href="/catalogue">Catalogue</a></li>
+            <li class="{% if nbar == 'contactus' %}active{% endif %}"><a href="/contactus">Contact Us</a></li>
+            <li class="{% if nbar == 'feedback' %}active{% endif %}"><a href="/feedback">Feedback</a></li>
           </ul>
         </div>
       </div>

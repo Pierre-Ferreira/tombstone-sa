@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Third party apps.
     'crispy_forms',
     # My apps.
+    'catalogue',
     'contactus',
     'homepage',
     'feedback',

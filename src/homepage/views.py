@@ -16,8 +16,10 @@ def homepage_view(request):
         messages.success(request, "Your request has been submitted!")
         return HttpResponseRedirect('/contactus')
     title = "Homepage"
+    nbar = "homepage"
     context = {
         "form": form,
         "title": title,
+        "nbar": nbar,
     }
     return render(request, 'home_page.html', context)
