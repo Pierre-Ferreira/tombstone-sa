@@ -9,5 +9,3 @@ from .views import catalogue_view
 urlpatterns = [
     url(r'^$', catalogue_view),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
