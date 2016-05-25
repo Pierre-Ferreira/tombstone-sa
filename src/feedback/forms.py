@@ -12,6 +12,10 @@ class FeedBackForm(forms.ModelForm):
             "type",
             "message",
         ]
-# def __init__(self, *args, **kwargs):
-#     super(FeedBackForm, self).__init__(*args, **kwargs)
-#     self.fields['fullname'].label = "Your name please:"
+        labels = {
+            "fullname": ("Your name and surname"),
+            "emailAddr": ("Your email address"),
+            "contactNo": ("Your contact/cell number"),
+            "type": ("What type is your feedback?"),
+            "message": ("Your feedback"),
+        }
