@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
+from django.core import mail
 
 from .models import FeedBack
 from .forms import FeedBackForm
@@ -14,6 +15,7 @@ def feedback_form_view(request):
         instance = form.save(commit=False)
         instance.save()
         #message success
+        # mail.send_mail('subject','message','pierre@tektite.biz',['pierre@tektite.biz'])
         messages.success(request, "Feedback has been submitted!")
         return HttpResponseRedirect('/feedback')
     # else:
